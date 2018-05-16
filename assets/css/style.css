@@ -1,0 +1,18 @@
+
+body {
+    background-image:url("file://assets/images/memphis-colorful.png");
+
+}
+
+h1 {
+    background-color: #ffffff;
+    border-color: #cccccc
+
+}
+
+div {
+    width: 300px;
+    border: 25px grey;
+    padding: auto;
+    margin: auto;
+}
