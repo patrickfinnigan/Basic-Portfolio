@@ -1,13 +1,13 @@
 
-body {
+body, a {
     background-image:url("file://assets/images/memphis-colorful.png");
     color: #777777;
     background-color: #ffffff;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-
+    background-color: bisque
 }
 
-div {
+ {
     width: 300px;
     border: 25px grey;
     padding: auto;
@@ -19,35 +19,35 @@ div {
 }
 
 .header {
-    border-color: #cccccc;
     float: left;
     position: fixed;
-    padding-top: 0%;
-
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
 
-.pagelink-about {
+.topnav {
     float: right;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: #ffffff
 }
 
-.pagelink-portfolio {
-    float: right;
-}
-
-.pagelink-contact {
-    float: right;
+.navbar {
+    width: auto;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    z-index: 0;
+    left: 0px;
+    right: 0px;
 }
 
 h1 {
-    background-color: #ffffff;
-    border-color: #cccccc
+
 
 }
-
-.pagecontent {
-    border: 2px;
-    border-color: black;
-    padding: grey;
-}
-
-
