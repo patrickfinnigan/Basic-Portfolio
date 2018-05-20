@@ -14,62 +14,53 @@ _______ _            ____                            _____
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Patrick's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <script src="main.js"></script>
     </head>
 
     <body>
-            <div class="header">
-                    <h1>Patrick's Portfolio</h1>
-                        <div class="topnav">
-                            <ul>
-                                <li>
-                                    <a href="#about">About</a>
-                                </li>
-                                <li>
-                                    <a href="#news">News</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-            <element class="navbar">
-
-        <div class=clear></div>
-        <br>
-        <div class="pagecontent">
-            <h2>About Me</h2>
-
-
-            <img src="assets/images/200.gif" alt="hmm">
-
-            <!-- Description -->
-            <div class="about-description">
-                <p><strong>This is a placeholder</strong></p>
-                <p> Metal Gear Solid 3: Snake Eater is an action-adventure stealth video game produced 
-                    by Konami Computer Entertainment Japan for the PlayStation 2. It was released in 
-                    late 2004 in North America and Japan, then in early 2005 in Europe and Australia. 
-                    It was the fifth Metal Gear game written and directed by Hideo Kojima and serves 
-                    as a prequel to the previous installments.</p>
-                <p> I am Andrew Ryan, and I'm here to ask you a question. Is a man not entitled to the 
-                    sweat of his brow? 'No!' says the man in Washington, 'It belongs to the poor.' 
-                    'No!' says the man in the Vatican, 'It belongs to God.' 'No!' says the man in Moscow,
-                    'It belongs to everyone.' I rejected those answers; instead, I chose something 
-                    different. I chose the impossible. I chose... Rapture, a city where the artist 
-                    would not fear the censor, where the scientist would not be bound by petty morality, 
-                    Where the great would not be constrained by the small! And with the sweat of your 
-                    brow, Rapture can become your city as well.</p>
+        <!-- this is the code for the HEADER! -->
+        <header id="masthead"> <!-- you give this element the id of "masthead" so you can differentiate its design in css from other elements -->
+        <div class="container"> <!-- this is to keep the elements below in a container in the header bar -->
+            <a href="index.html" id="logo">Your Name</a> <!-- you also add an id to the logo to style it separatly! -->
+                <nav> <!-- the nav tag is for putting elements in a navigation bar -->
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contacts.html">Contacts</a>
+                </nav>
             </div>
-                <ul>
-                    <li>Ascension</li>
-                    <li>Century: Golems</li>
-                    <li>Sheriff of Nottingham</li>
-                    <li>Magic Maze</li>
-                    <li>7 Wonders</li>
-                </ul>
+        </header>
+
+         <!-- this is where you will make the main container below the navigation bar!-->
+        <div id="main-container" class="container">
+            <!-- This section is for the description!-->
+            <section class="main-section">
+                <h1>About Me</h1>
+
+                <img src="assets/images/200.png" class="auth-image" alt="author image">
+
+                <p>
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla at ultricies purus. Mauris consectetur dui odio, non vulputate mauris egestas sit amet. Suspendisse posuere eget ipsum a pellentesque. Mauris est sem, rutrum id vestibulum ut, maximus cursus nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin rutrum sapien id arcu lobortis tempus. Maecenas eget justo eget odio auctor ultricies in sit amet lacus. Cras pretium sed nisi sed facilisis. Aenean congue lectus nulla. Quisque tristique congue quam et convallis. Vestibulum placerat nec sem at efficitur.
+                </p>
+
+            </section>
+            <section class="sidebar">
+                <div id="connet">
+                    <h2>Connect With Me</h2>
+                    <img src="assets/images/github.png" class="social" alt="GitHub">
+                    <img src="assets/images/linkedin.png" class="social" alt="LinkedIn">
+                    <img src="assets/images/stackoverflow.png" class="social" alt="StackOverflow">
+                </div>
+            </section>
         </div>
+
+        <!-- This is where you will develop the footer element! -->
+        <footer>
+            <div class="container">
+                &copy; Copyright 2018 Your Name
+            </div>
+        </footer>
+
     </body>
 </html>
